@@ -161,7 +161,7 @@ class BrushSelection {
     // create circle element
     const circle = document.createElementNS(svg.namespaceURI, "circle");
     circle.setAttribute("r", this.radius.toString());
-    circle.setAttribute("fill", "rgba(255, 102, 0, 0.2)");
+    circle.setAttribute("fill", "#bbda553e");
     circle.setAttribute("stroke", "#bada55");
     circle.setAttribute("stroke-width", "1");
     circle.setAttribute("stroke-dasharray", "5, 5");
@@ -675,7 +675,7 @@ class ControlPanel extends Container {
     // export
     const exportPanel = new Panel({
       class: "control-panel",
-      headerText: "Export To",
+      headerText: "Download",
     });
 
     // const exportPlyButton = new Button({
@@ -690,6 +690,7 @@ class ControlPanel extends Container {
 
     const exportSplatButton = new Button({
       class: "control-element",
+      id: "export-splat-button",
       text: "Splat file",
     });
 
