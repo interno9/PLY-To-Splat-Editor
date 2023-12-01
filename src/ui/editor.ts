@@ -2,7 +2,7 @@ import { Container, InfoBox } from "pcui";
 import { version as supersplatVersion } from "../../package.json";
 import { ControlPanel } from "./control-panel";
 import logo from "./playcanvas-logo.png";
-
+//
 class EditorUI {
   appContainer: Container;
   leftContainer: Container;
